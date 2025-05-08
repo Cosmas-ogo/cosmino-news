@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { fetchArticles } from "../utils/api";
 import ArticleList from "../components/ArticleList";
 
-const ARTICLES_PER_PAGE = 9;
+const ARTICLES_PER_PAGE = 12;
 
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
