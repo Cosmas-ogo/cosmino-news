@@ -20,7 +20,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       ) : (
-        <main className="flex-1 p-4 sm:p-6 md:p-8 max-w-[1600px] mx-auto w-full bg-gray-50">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 max-w-screen-3xl mx-auto w-full bg-gray-50">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/articles/:article_id" element={<ArticlePage />} />

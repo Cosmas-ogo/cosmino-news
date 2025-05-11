@@ -5,11 +5,10 @@ import {
   deleteComment,
 } from "../utils/api";
 import CommentCard from "./CommentCard";
-import { useUser } from "../contexts/UserContext"; // ✅ Correct import
+import { useUser } from "../contexts/UserContext";
 
 const CommentList = ({ articleId }) => {
-  const { currentUser } = useUser(); // ✅ Correct usage
-
+  const { currentUser } = useUser();
   const [comments, setComments] = useState([]);
   const [newCommentBody, setNewCommentBody] = useState("");
   const [posting, setPosting] = useState(false);
